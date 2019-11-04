@@ -1,1 +1,2 @@
 # Nested-Interrupt
+When an interrupt occurs while handling another “lower priority” interrupt. Not all microcontrollers support this feature When an interrupt occurs, the Global Interrupt Enable I-bit is cleared and all interrupts are disabled. The user software can write logic one to the I-bit to enable nested interrupts. All enable interrupts can then interrupt the current interrupt routine. The I-bit is automatically set when a Return from Interrupt instruction – RETI – is executed.
